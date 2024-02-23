@@ -7,7 +7,7 @@ const index = async (_req, res) => {
     if (carros.length < 1) {
         return res.status(400).json({
             status: 400,
-            message: error.message
+            message: 'Carros não foram encontrados'
         })
     }
 
